@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="Module1">
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <style> body { font-size: 1.2em; }</style>
+    <title>Module1_Solution</title>
+  </head>
+  <body ng-controller="AssignmentController">
+    <h1>Module1_Solution</h1>
+
+    <input type="text"
+           ng-model="value"
+           ng-change="valueChanged()"> <br>
+
+    <p>{{response}}</p> <br>
+    <button type="button" ng-click="showStatus()">Check If Too Much</button>
+  </body>
+</html>
